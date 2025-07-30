@@ -24,8 +24,6 @@
     header {
       text-align: center;
       padding: 60px 20px 20px;
-      position: relative;
-      z-index: 2;
       max-width: 1200px;
       width: 100%;
     }
@@ -48,7 +46,6 @@
       top: 50%;
       transform: translateY(-50%);
       opacity: 0.7;
-      user-select: none;
     }
     header h1::before {
       left: 0;
@@ -60,20 +57,14 @@
       margin-right: -30px;
       filter: drop-shadow(0 0 2px black);
     }
-
     header h2 {
       font-family: 'Great Vibes', cursive;
       font-size: 2.8em;
       color: white;
-      text-shadow:
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 20px #fff,
-        0 0 30px black;
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px black;
       margin-top: 0;
       margin-bottom: 15px;
     }
-
     #personal-drawing {
       max-width: 300px;
       margin: 0 auto 40px;
@@ -84,10 +75,7 @@
       font-size: 1.3em;
       font-weight: 600;
       animation: glowBW 3s infinite alternate;
-      box-sizing: border-box;
-      user-select: none;
     }
-
     section {
       max-width: 800px;
       margin: 30px auto;
@@ -96,19 +84,14 @@
       border-radius: 15px;
       background: rgba(0,0,0,0.4);
       animation: glowBW 3s infinite alternate;
-      box-sizing: border-box;
     }
     @keyframes glowBW {
       0% {
-        box-shadow:
-          0 0 8px white,
-          0 0 15px black;
+        box-shadow: 0 0 8px white, 0 0 15px black;
         border-color: white;
       }
       100% {
-        box-shadow:
-          0 0 15px black,
-          0 0 25px white;
+        box-shadow: 0 0 15px black, 0 0 25px white;
         border-color: black;
       }
     }
@@ -128,7 +111,6 @@
       margin-top: 0;
       color: white;
     }
-    /* Форма */
     form {
       display: flex;
       flex-direction: column;
@@ -147,24 +129,18 @@
       color: white;
       padding: 10px;
       font-size: 1em;
-      transition: border-color 0.3s ease;
-      box-sizing: border-box;
-      animation: none;
     }
     input[type="text"]:focus,
     textarea:focus {
       outline: none;
       border-color: white;
-      box-shadow:
-        0 0 8px white,
-        0 0 15px black;
-      animation: glowBW 3s infinite alternate;
+      box-shadow: 0 0 8px white, 0 0 15px black;
       background: rgba(0,0,0,0.6);
+      animation: glowBW 3s infinite alternate;
     }
     textarea {
       resize: vertical;
     }
-    /* Кнопка Получить расклад */
     button {
       margin-top: 20px;
       padding: 12px 0;
@@ -178,7 +154,6 @@
       align-self: center;
       width: 200px;
       animation: glowBW 3s infinite alternate;
-      transition: background-color 0.3s ease, color 0.3s ease;
       position: relative;
       overflow: hidden;
     }
@@ -192,7 +167,6 @@
       background: linear-gradient(270deg, rgba(255,255,255,0.3), rgba(255,255,255,0.9), rgba(255,255,255,0.3));
       transform: rotate(45deg);
       animation: shine 2.5s infinite;
-      pointer-events: none;
       border-radius: 25px;
       opacity: 0.7;
     }
@@ -209,7 +183,6 @@
       color: black;
       animation: none;
     }
-    /* Ссылки */
     a {
       color: #00aaff;
       text-decoration: none;
@@ -217,7 +190,6 @@
     a:hover {
       text-decoration: underline;
     }
-    /* Footer */
     footer {
       text-align: center;
       padding: 20px 10px;
@@ -238,57 +210,96 @@
 
 <section>
   <h3>Кто такая Serelith Isara𖤓</h3>
-  <p>Я живу в Германии мне 27 лет,меня зовут Фатима, но в мире магии и Таро меня знают под именем Serelith Isara — имя, пришедшее ко мне во сне как тихий шёпот моей души. С раннего детства я ощущала связь с невидимыми силами, тонко чувствовала энергию вокруг и умела читать знаки, скрытые от глаз обычных людей.</p>
+  <p>Меня зовут Фатима, но в мире магии и Таро меня знают под именем Serelith Isara — имя, пришедшее ко мне во сне как тихий шёпот моей души. С раннего детства я ощущала связь с невидимыми силами, тонко чувствовала энергию вокруг и умела читать знаки, скрытые от глаз обычных людей.</p>
   <p>Путь Таро стал для меня не просто профессией, а глубокой духовной практикой, через которую я помогаю людям обрести ясность, найти ответы и направить их судьбу на путь света и гармонии. Мои расклады — это мост между миром духов и реальностью, где каждый символ и карта открывают тайны, ведущие к внутреннему просветлению.</p>
   <p>Я работаю не только с классическими колодами, но и с авторскими, которые создаю сама, наполняя их силой и магией, пришедшей из разных культур и традиций. Моя миссия — помочь каждому, кто приходит ко мне за помощью, услышать голос своей души и сделать выбор, который приведёт к счастью и развитию.</p>
   <p>Serelith Isara — это не просто имя, это путь, это свет внутри каждого из нас, зов к истинной магии жизни.</p>
 </section>
 
 <section>
-  <h3>☪︎Моя Магия</h3>
+  <h3>Моя Магия</h3>
   <p>Я работаю с классическим Таро, Оракулом Теней и Авторской колодой, соединяя древние знания и интуицию. Каждая карта — это портал в подсознание, ключ к пониманию глубинных процессов и энергетических потоков. Моя практика основана на искренности, честности и любви к миру Таро, чтобы помочь тебе найти свой путь.</p>
 </section>
 
 <section>
-  <h3>☘︎Услуги</h3>
+  <h3>Услуги</h3>
   <ul>
     <li>♥︎Любовные расклады</li>
     <li>✡︎Путь души и магический дар</li>
     <li>☾Расклады на ситуацию</li>
     <li>☯︎Личное послание от карт</li>
   </ul>
-  <p>Связь через Telegram: <a href="https://t.me/miamorafatibot">@miamorafatibot</a></p>
+  <p>Связь через Telegram: <a href="https://t.me/miamorafati" target="_blank" rel="noopener noreferrer">@miamorafati</a></p>
 </section>
 
 <section>
   <h3>✉Отзывы</h3>
-  <ul>
-    <li>↪︎"Ты открыла мои глаза на правду, которую я боялась увидеть..." — Анна</li>
-    <li>↪︎"Работает, как будто читает душу и видит глубже слов..." — Лейла</li>
-    <li>↪︎"Расклад помог найти гармонию в отношениях." — Мария</li>
-    <li>↪︎"Уникальный подход и глубокое понимание." — Дмитрий</li>
-    <li>↪︎"Благодаря Serelith Isara жизнь изменилась к лучшему." — Елена</li>
-  </ul>
+  <div style="display: flex; flex-direction: column; gap: 15px;">
+    <div style="border: 2px solid white; padding: 15px 20px; border-radius: 12px; background: rgba(0,0,0,0.5); animation: glowBW 3s infinite alternate;">
+      <p>↪︎ "Ты открыла мои глаза на правду, которую я боялась увидеть..." — <strong>Анна</strong></p>
+    </div>
+    <div style="border: 2px solid white; padding: 15px 20px; border-radius: 12px; background: rgba(0,0,0,0.5); animation: glowBW 3s infinite alternate;">
+      <p>↪︎ "Работает, как будто читает душу и видит глубже слов..." — <strong>Лейла</strong></p>
+    </div>
+    <div style="border: 2px solid white; padding: 15px 20px; border-radius: 12px; background: rgba(0,0,0,0.5); animation: glowBW 3s infinite alternate;">
+      <p>↪︎ "Расклад помог найти гармонию в отношениях." — <strong>Мария</strong></p>
+    </div>
+    <div style="border: 2px solid white; padding: 15px 20px; border-radius: 12px; background: rgba(0,0,0,0.5); animation: glowBW 3s infinite alternate;">
+      <p>↪︎ "Уникальный подход и глубокое понимание." — <strong>Дмитрий</strong></p>
+    </div>
+    <div style="border: 2px solid white; padding: 15px 20px; border-radius: 12px; background: rgba(0,0,0,0.5); animation: glowBW 3s infinite alternate;">
+      <p>↪︎ "Благодаря Serelith Isara жизнь изменилась к лучшему." — <strong>Елена</strong></p>
+    </div>
+  </div>
 </section>
 
 <section id="order">
-  <h3>✉Получить свой личный расклад</h3>
+  <h3>Получить свой личный расклад</h3>
   <p>Если твоя душа ищет ответы, а сердце — знак свыше, я помогу раскрыть тайны карт Таро специально для тебя. Закажи расклад — и вместе мы увидим свет в лабиринте судьбы.</p>
-  <form action="/send" method="post">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" name="name" placeholder="Как к тебе обращаться?" required />
-
-    <label for="concern">Твой вопрос или ситуация:</label>
-    <textarea id="concern" name="concern" rows="4" placeholder="Напиши, что тебя волнует..." required></textarea>
-
-    <button type="submit">Получить расклад</button>
+  
+  <form id="orderForm" onsubmit="return openTelegram(event)" style="max-width: 400px; margin: 0 auto;">
+    <label for="name" style="color: white; font-weight: 600;">Ваше имя:</label><br />
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin: 6px 0 12px; border-radius: 6px; border: 1px solid #ccc;" />
+    
+    <label for="question" style="color: white; font-weight: 600;">Интересующий вопрос:</label><br />
+    <textarea id="question" name="question" rows="3" required style="width: 100%; padding: 8px; margin: 6px 0 12px; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+    
+    <button type="submit" class="button" style="width: 100%;">Отправить</button>
   </form>
-  <p>Связь через Telegram: <a href="https://t.me/miamorafatibot">@miamorafatibot</a></p>
+  
+  <p style="text-align: center; margin-top: 15px;">
+    Связь через Telegram: <a href="https://t.me/miamorafati" target="_blank" rel="noopener noreferrer">@miamorafati</a>
+  </p>
 </section>
 
 <footer>
-  © 2025 Serelith Isara. Все права защищены.
+  <p>© 2025 Serelith Isara. Все права защищены.</p>
 </footer>
+
+<script>
+  function openTelegram(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const question = document.getElementById('question').value.trim();
+
+    if (!name || !question) {
+      alert('Пожалуйста, заполните оба поля.');
+      return false;
+    }
+
+    const message = encodeURIComponent(`Имя: ${name}\nВопрос: ${question}`);
+
+    const telegramUsername = 'miamorafati'; // заменён здесь
+
+    const tgUrl = `https://t.me/${telegramUsername}?start=from_website&text=${message}`;
+
+    // Открываем ссылку в новом окне
+    window.open(tgUrl, '_blank');
+
+    return false;
+  }
+</script>
 
 </body>
 </html>
